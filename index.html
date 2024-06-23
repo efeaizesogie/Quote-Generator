@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simple Quote Generator</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="heading">
+          <h1>Javascript Quote Generator</h1>
+        </div>
+
+        <div class="quote-content">
+          <div class="box">
+            <div class="text-area">
+              <h1>
+                <i class="fas fa-quote-left"></i>
+                <span class="quote" id="quote"></span>
+                <i class="fas fa-quote-right"></i>
+              </h1>
+            </div>
+            <div class="quote-author">
+              <span class="person" id="person"></span>
+            </div>
+            <hr />
+            <div class="button-content">
+              <div class="btn-twitter">
+                <a
+                  href="https://twitter.com/intent/tweet?text=Greetings"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="tweet"
+                  id="tweet"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+              <button class="next-btn" onclick="getNewQuote()">
+                Next Quote
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
